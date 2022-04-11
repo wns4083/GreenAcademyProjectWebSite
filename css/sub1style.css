@@ -1,0 +1,151 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url("../include/header.css");
+@import url("../include/footer.css");
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body, ul, li, h1, h2, h3, h4, h5, p, section, div, span, button, dt, dd{
+    margin: 0px;
+    padding: 0px;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{display: block; border: 0px;}
+address{font-style: normal;}
+@media screen and (min-width:1025px){
+    .desktop{display: block !important;}
+    .mobile, .tablet{display: none !important;}
+}
+@media screen and (max-width:1024px) and (min-width:641px){
+    .tablet{display: block !important;}
+    .mobile, .desktop{display: none !important;}
+}
+@media screen and (max-width: 640px){
+    .mobile{display: block !important;}
+    .tablet, .desktop{ display: none !important;}
+}
+
+
+
+
+
+
+.spot1{display: inline-block; background: url("../img/about/spot1.png") no-repeat transparent; width:67px; height:103px; position: absolute; top: 98px; background-size: contain;}
+
+
+.subbanner{width:100%; max-width: 1920px; min-width: 1600px; height:500px; min-height: 400px; box-sizing: border-box;}
+.subbanner img{display: block; width:100%; height:100%;}
+#container{ width:100%; max-width: 1160px; margin: 0 auto; position: relative;}
+
+.aside{ width: 150px; height: 300px; position: absolute; background: url("../img/about/aside.jpg") no-repeat; right:-200px; padding: 10px; box-sizing: border-box; top:100px;}
+.aside a{ text-align: center; color:#fff; font-size: 18px; display: block; width:100%; height:100%;}
+.aside:hover{ background: url("../img/about/asidehover.jpg") no-repeat; transition: 1s ease-in-out;}
+.whos{position: relative; width:100%; max-width: 1160px; height:759px; margin:0 auto; }
+.whos h2{ text-align: center; font-family: 'Noto Sans KR Bold'; font-size: 68px; padding-top: 202px;}
+.whos h3{ text-align: center; font-size: 24px; }
+.innerbox1{margin-top:32px; height:400px; box-sizing: border-box; position: relative; font-size:20px;}
+.whoare{font-family: 'Noto Sans KR Bold'; font-size:24px; box-sizing: border-box;}
+.whoare>strong{ font-size: 32px;}
+.innerbox1>.whoare{float:left; height:400px; width:649px; text-align: center; display: flex; flex-direction: column; justify-content: center; position: relative;}
+.innerbox1>.invisible{position:absolute; top:0; left:0; width:649px; height:100%; white-space:pre-line; background: rgba(0,0,0,0.9); color:#fff; box-sizing: border-box; padding:30px; margin-top:50px; transition: all 2s; opacity: 0; font-size: 20px;}
+
+.innerbox1>.picture{float:right;}
+.innerbox1>.picture>img{display: block;}
+
+.vnp{position: relative; box-sizing: border-box; padding-top:227px;}
+.spot2{display: inline-block; background: url("../img/about/spot2.png") no-repeat transparent; width:67px; height:45px; background-size: contain; position: absolute; left:0;}
+.vnp h2{ font-family: 'Noto Sans KR Bold'; font-size: 68px; text-align: center; margin-bottom: 157px; line-height: 90px; letter-spacing: -5px;}
+.vptext{background: url("../img/about/vision%20ver2.png") no-repeat; width:100%; height: 600px; position: relative; display: flex; justify-content: center; align-items: center;}
+.vptext>.innertext{ width:87%; max-width:1007px; height:70%; max-height: 400px; color:#fff; text-align: center; box-sizing: border-box; padding:70px 42px 42px 42px; background: rgba(0,0,0,.65); font-size: 28px;}
+.vptext>.innertext>strong{ display: block; margin-bottom: 50px;}
+
+.history{width:100%; max-width: 1160px; height:983px; margin: 0 auto; position: relative;  padding-top:108px; overflow: hidden; margin-bottom: 200px; }
+.historyTop{width:100%; max-width:1160px; position: relative; height:250px;}
+.historyTop h2{text-align: center; font-size:64px;}
+.historyTop h3{text-align: center;}
+.historyTop>.bg{display: block; width: 100%; height:110px; background: url("../img/about/historyspot.png") no-repeat; position:absolute; top:140px;}
+.spot3{display: inline-block; background: url("../img/about/spot3.png") no-repeat transparent; width:160px; height:50px; background-size:contain; position: absolute; left:0;}
+.byyear{ width:10810px; position: absolute; height: 584px; margin-top:41px; box-sizing: border-box; display: flex; flex-direction: row-reverse;}
+.byyear div{ float:left; width: 360px; height:584px; overflow: hidden; margin-right:40px; text-align: center;  }
+.byyear div:first-child{margin-right: 0;}
+.byyear div h3{ text-align: center; height:50px; margin-bottom: 34px; height:50px; background: #ededed; line-height: 50px;}
+.byyear div .list{ display: flex; flex-direction: column-reverse; background: #ededed; width:100%; height:500px;  box-sizing: border-box; padding:20px; overflow-y: scroll;}
+.byyear div .list li{ margin-bottom:5px; font-size: 18px;}
+.byyear div .list ul li:first-of-type{color:rgb(255, 0, 0); font-size: 24px; width:100%; height:30px; line-height: 30px; text-align: left; }
+.byyear div .list>ul>li:nth-child(n+3){display: none;}
+.byyear>div>.list>ul:hover>li{display: block;}
+
+.byyear:after{ content:''; clear:both; display: block;}
+.control{position: absolute; bottom:0; width:100%;}
+.prev{ background: #fff; border: none; cursor: pointer; margin-top: 10px; font-size:24px; display: block; text-align: center; width:100%;} 
+.next{ background: #fff; border: none; cursor: pointer; margin-top: 10px; font-size:24px; display: block; text-align: center; width:100%;}
+.prev:hover{ background: rgba(247, 151, 151, 0.65);}
+.next:hover{ background: rgba(247, 151, 151, 0.65);}
+
+
+
+
+@media screen and (max-width:1024px) and (min-width:641px) {
+    
+    #wrrap>#sdbox:after{ content:''; clear:both; display:block;}
+
+   
+    
+    .subbanner{ min-width:700px;}
+    .container{ width:100%; max-width:984px; min-width:768px; overflow: hidden;}
+    .innerbox1{height:500px;}
+    .innerbox1>.whoare{width:35%; height:500px; padding:20px;}
+    .innerbox1>.whoare>strong{font-size:24px;}
+    .innerbox1>.invisible{ display:none;}
+    .innerbox1>.picture{width:auto;}
+    
+    .vnp h2{font-size: 48px;}
+    .aside{ width:100px; height: 200px; right:40px; background-size: cover; background-position-y: center; z-index: 100; }
+    .aside a{font-size:12px;}
+    .whos h2{ font-size: 48px;}
+    .whos h3{ font-size: 20px;}
+    .vptext{background: url("../img/about/visionTabletver.png") no-repeat;}
+    .historyTop>.bg{background: url("../img/about/historyspotTABLET.jpg") no-repeat;}
+    .historyTop h2{font-size: 48px; padding-top:20px;}
+    .byyear div{width:300px;}
+    
+}
+@media screen and (max-width:640px) {
+    
+    
+
+
+
+    .subbanner{width:100%; min-width:360px;}
+    .aside{display: none;}
+    #container{width:100%; overflow: hidden;}
+    .whos{ min-height: 591.8px; height: auto;}
+    .whos .spot1{ z-index: -1; top:30px; width:87px; height:123px; background-size:cover;}
+    .whos h2{ font-size:24px; padding: 22px 0 0 0;}
+    .whos h3{ font-size:14px;}
+    .innerbox1{ margin:0; min-height:467.1px;}
+    .innerbox1 .whoare{ width:80%; margin: 0 auto; margin-top:50px; float:none; height:120px;}
+    .innerbox1 .whoare>strong{ font-size: 14px;}
+    .innerbox1 .whoare>em{font-size:10px;}
+    .innerbox1 .invisible{ display: none;}
+    .picture{ float: none;}
+    .picture img{ width:100%; height:100%;}
+
+    .vnp{ padding:0; }
+    .spot2{ z-index: -1; width:87px; height:65px; background-size:cover; background-position:center; top:17px;}
+    .vnp>h2{ font-size: 24px; padding: 22px 0 0 0; margin-bottom:0; line-height: 24px;}
+    .vptext{background: url("../img/about/visionMobilever.png") no-repeat; background-size: cover; background-position: center; margin-top:100px; height:400px;}
+    .vptext>.innertext{ width:80%; height:50%; font-size:12px; padding: 20px;}
+
+    .history>.spot3{ width:160px; height: 70px; background-size:contain; background-position: center;}
+    .history>.historyTop>h2{font-size:24px;}
+    .history>.historyTop>h3{font-size:12px;}
+    .historyTop>.bg{background: url("../img/about/historyspotMOBILE.jpg") no-repeat;}
+    .byyear{ height: auto; left:17%;}
+    .byyear div{ width: 300px;}
+
+
+
+}

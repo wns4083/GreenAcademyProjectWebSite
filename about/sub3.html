@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contribute Social</title>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/navbar.js"></script>
+<link rel="stylesheet" href="../css/sub2style.css">
+<link rel= "바로가기 아이콘"  href="../img/favicon.ico"  type= "image/x-icon" > 
+<link rel= "icon"  href="../img/favicon.ico"  type= "image/x-icon" >
+<script>
+    $(document).ready(function(){
+        var cvalue=$('.contribute').find('div');
+        var cTop=cvalue.height();
+        var clength=cvalue.length;
+        $('.contribute').height(cTop*clength);
+        console.log(cvalue);
+        console.log(cTop);
+        console.log(clength);
+        function MoveTop(){
+            $('.outer').animate({top: +cTop},2000,function(){
+                $('.outer').find('div').eq(0).appendTo($('.outer'));
+                
+            });
+            
+            
+        }
+        var loop=setInterval(MoveTop, 2000);
+        
+
+        
+       
+    });
+</script>
+</head>
+<body>
+        <header>
+            <?include("../header.html")?>
+        </header>
+    <div class="container">
+        <section class="mainbanner">
+            <img src="../img/social/contributeMB.jpg" alt="mainbanner">
+        </section>
+        <section class="animate contributeSubject">
+            <h2>Social Contribute</h2>
+            <h3>Connect With us and you</h3>
+            <div class="ani1"></div>
+            <div class="ani2"></div>
+            <div class="ani3"></div>
+        </section>
+        <section class="contriAb">
+            <img src="../img/social/contributeMD.png" alt="contriAb">
+        </section>
+        <section class="contribute">
+            <div class="outer">
+                <div class="contribute1">
+                <figure>
+                    <img src="../img/social/contribute1.jpg" alt="contribute1">
+                    <figcaption>NYPC</figcaption>
+                </figure>
+                <p>넥슨은 지난 2016년부터 '세상을 바꾸는 코딩'이라는 슬로건으로 청소년 코딩 대회인 '넥슨 청소년 프로그래밍 챌린지(Nexon Youth Programming Challenge, 이하 NYPC)'를 개최해오고 있습니다.</p>
+                </div>
+                <div class="contribute2">
+                <figure>
+                <img src="../img/social/contribute2.jpg" alt="contribute2">
+                <figcaption>넥슨 어린이재활병원</figcaption>
+                </figure>
+                <p>넥슨은 장애 어린이의 건강한 미래에 대한 지속적인 관심을 바탕으로 지난 2014년 12월 푸르메재단과 협약을 통해 국내 최초의 어린이재활병원 건립을 위해 200억 원을 기부했습니다.</p>
+                </div>
+                <div class="contribute3">
+                <figure>
+                    <img src="../img/social/contribute3.jpg" alt="contribute3">
+                    <figcaption>넥슨 작은책방</figcaption>
+                </figure>
+                <p>아이들에게 지식과 배움의 터를 마련해주고자 2005년 시작돼, 16년째 지속적으로 호가대하여 국내외 지역에 총 130개 점을 운영 중입니다. 2011년부터는 '전세계 아이들의 꿈이 이뤄지는 공간'이라는 뜻을 담아 'Wish Planet(위시 플래닛)'이라는 명칭으로 해외 작은책방을 개관하고 있습니다.</p>
+                </div>
+                <div class="contribute4">
+                <figure>
+                    <img src="../img/social/contribute4.jpg" alt="contribute4">
+                    <figcaption>Playinovation</figcaption>
+                </figure>
+                <p>'즐거운 혁신가들의 세상(A World of Playful innovation)'을 만들기 위한 넥슨 재단의 사회공헌 프로그램으로, 2018년 2월 첫 발을 내딛었습니다.</p>
+                </div>
+                <div class="contribute5">
+                <figure>
+                    <img src="../img/social/contirbute5.jpg" alt="contribute5">
+                    <figcaption>넥슨 컴퓨터박물관</figcaption>
+                </figure>
+                <p>아시아 최초의 컴퓨터박물관인 넥슨 컴퓨터박물관은 컴퓨터와 게임의 역사를 수집*보존하고, 이를 바탕으로 지역사회와 생상하는 사회교육기관입니다. 기술의 변화와 발전을 주도해온 7천여 점의 컴퓨터 게임 관련 소장품을 보유하고 있으며, 체험 가능한 형태의 전시를 통해 관람객에게 다양한 콘텐츠 경험을 제공하고 있습니다.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <?include("../footer.html")?>
+        </footer>
+    </div>
+</body>
+</html>

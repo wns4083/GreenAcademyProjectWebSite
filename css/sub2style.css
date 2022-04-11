@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url("../include/header.css");
+@import url("../include/footer.css");
+
+body, ul, li, h1, h2, h3, h4, h5, p, section, div, span, button, dt, dd, figure, figcaption{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{display: block; border: 0px;}
+address{font-style: normal;}
+
+@media screen and (min-width:1025px){
+    .desktop{display: block !important;}
+    .mobile, .tablet{display: none !important;}
+}
+@media screen and (max-width:1024px) and (min-width:641px){
+    .tablet{display: block !important;}
+    .mobile, .desktop{display: none !important;}
+}
+@media screen and (max-width: 640px){
+    .mobile{display: block !important;}
+    .tablet, .desktop{ display: none !important;}
+}
+.container{width:100%; max-width:1920px; overflow: hidden;}
+.mainbanner{
+    width:100%; max-width:1920px; 
+    background: #c09;
+    height:500px;
+}
+.mainbanner img{ width: 100%; height: 100%}
+.animate{
+    height:270px;
+    position: relative;
+}
+.animate h2{ text-align: center; font-weight: bold; font-size: 56px; padding-top:80px;}
+.animate h3{ text-align: center; font-size: 24px;}
+.animate div{
+    width: 50px; height:50px; border-radius: 50%;
+    float:left; transition: All 1s;
+}
+.ani1{background: #987;}
+.ani2{background: #771;}
+.ani3{background: #fc3;}
+
+.contriAb{
+    width: 100%; max-width:1920px; height:500px;
+    background: rgb(192, 118, 118);
+    
+}
+.contribute{
+    width: 1160px; height: auto;
+    display: flex; 
+    flex-direction:column;
+    margin: 200px auto;
+    position:relative;
+    overflow: hidden;
+}
+.contribute div{
+    width: 1160px; height: auto;
+    border: none;
+    box-sizing: border-box;
+    height:420px;
+    position: relative;
+    transition: all 1s;
+}
+
+.contribute figure{ float:left; background: #fff; border:none; box-sizing:border-box; height:100%; width:70%;}
+.contribute figcaption{ position: absolute; bottom:10px;right: 50px; font-size: 24px; font-weight: bold;}
+.contribute img{ width:100%; height:100%;}
+.contribute p{ float:right;  width: 30%; height:auto; position:absolute; top:50%; right: 0; transform: translateY(-50%); box-sizing: border-box; padding:15px; font-size:20px;}
